@@ -1,0 +1,23 @@
+# Xcode
+*.xcodeproj/
+!*.xcodeproj/project.xcworkspace/xcshareddata/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/*/.build/
+
+# macOS
+.DS_Store
+
+# Divers
+*.log
+.env
