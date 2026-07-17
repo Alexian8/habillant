@@ -1,0 +1,28 @@
+# HabitPlan — projet Xcode généré par XcodeGen.
+# Usage : brew install xcodegen && cd app && xcodegen generate
+name: HabitPlan
+options:
+  bundleIdPrefix: com.habitplan
+  deploymentTarget:
+    iOS: "17.0"
+    macOS: "14.0"
+packages:
+  HabitPlanKit:
+    path: Packages/HabitPlanKit
+targets:
+  HabitPlan:
+    type: application
+    supportedDestinations: [iOS, macOS]
+    deploymentTarget:
+      iOS: "17.0"
+      macOS: "14.0"
+    sources:
+      - HabitPlan
+    dependencies:
+      - package: HabitPlanKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.habitplan.app
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.10"
+        INFOPLIST_KEY_CFBundleDisplayName: Habit Plan
